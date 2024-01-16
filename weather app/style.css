@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://wallpapercave.com/wp/wp5312872.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* object-position: center; */
+}
+
+.container{
+    width: 400px;
+    height: min-content;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 14px;
+    padding: 28px;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.search-box ::placeholder{
+     color: #a39f9f;
+
+}
+
+.search-box input{
+    width: 84%;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color:black;
+    padding: 18px;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.search-box button{
+    font-size: 30px;
+    background-color:black;
+    color: #fff;
+    padding: 12px;
+    border-radius: 50%;
+}
+.search-box button:hover{
+    color: black;
+    background-color:#fff;
+}
+
+.weather-body img{
+    width: 80%;
+}
+
+.error{
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.error h1{
+    font-size: 30px;
+    margin-block:20px ;
+    color: #fff;
+}
+.error img{
+    width: 80%;
+}
+.weather-body{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-block: 20px;
+}
+
+.weather-box{
+    margin-block: 20px;
+    text-align: center;
+}
+.weather-box p{
+    font-size: 20px;
+}
+
+.weather-box .temperature{
+    font-weight: 800;
+    font-size: 40px;
+    color: #fff;
+}
+.weather-box .description{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.weather-details{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.weather-details .humidity{
+   /* font-size: 25px; */
+   margin-left: 20px;
+}
+
+.weather-details .wind{
+    /* font-size: 25px; */
+    margin-right: 20px;
+ }
+
+ .humidity, .wind{
+    display: flex;
+    align-items: center;
+    color: #fff;
+ }
+
+ .weather-details i{
+    font-size:30px ;
+ }
+
+.weather-details .text{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.text span{
+    font-size: 20px;
+    font-weight: 600;
+}

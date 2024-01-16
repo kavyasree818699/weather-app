@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="enter the location" class="input-box">
+                <button class="fa-solid fa-magnifying-glass" id="search"></button>
+            </div>
+        </div>
+        <div class="error">
+            <h1>sorry the location is not found!!!</h1>
+            <img src="404.png">
+        </div>
+        <div class="weather-body">
+            <img src="clear.png" alt="weather-img" class="weather-img">
+
+            <div class="weather-box">
+                <p class="temperature">0<sup>°C</sup></p>
+                <p class="description">clear sky</p>
+            </div>
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="ri-drop-fill"></i>
+                    <div class="text">
+                        <span id="humidity">100%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="ri-windy-fill"></i>
+                    <div class="text">
+                        <span id="wind-speed">12km/hr</span>
+                        <p>wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/80dbb30883.js" crossorigin="anonymous"></script>
+</html>
